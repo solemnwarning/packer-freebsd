@@ -10,3 +10,6 @@ rm -f /var/db/dhclient.leases.*
 rm -rf /boot/kernel.old
 rm -f /*.core
 rm -rf /tmp/*
+
+# Trim unused space from the image.
+zpool trim -w zroot
